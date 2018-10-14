@@ -12,6 +12,9 @@ import com.yangyuqun.commons.ToastUtil;
 import com.yangyuqun.router.app.callback.AppCallback;
 import com.yangyuqun.router.app.entity.AppEntity;
 
+import io.reactivex.Observer;
+import io.reactivex.disposables.Disposable;
+
 /**
  * @author SheepYang
  * @Email 332594623@qq.com
@@ -103,34 +106,66 @@ public class Module1TabFragment extends Fragment {
         btnObservableOfApp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Services.sAppService.observableOfApp()
+                        .subscribe(new Observer<AppEntity>() {
 
+                            @Override
+                            public void onSubscribe(Disposable d) {
+
+                            }
+
+                            @Override
+                            public void onNext(AppEntity appEntity) {
+                                ToastUtil.show("来自app模块: " + appEntity.data);
+                            }
+
+                            @Override
+                            public void onError(Throwable e) {
+
+                            }
+
+                            @Override
+                            public void onComplete() {
+
+                            }
+                        });
             }
         });
-        btnStartActivityOfModule2.setOnClickListener(new View.OnClickListener() {
+        btnStartActivityOfModule2.setOnClickListener(new View.OnClickListener()
+
+        {
             @Override
             public void onClick(View v) {
 
             }
         });
-        btnGetFragmentOfModule2.setOnClickListener(new View.OnClickListener() {
+        btnGetFragmentOfModule2.setOnClickListener(new View.OnClickListener()
+
+        {
             @Override
             public void onClick(View v) {
 
             }
         });
-        btnCallMethodSyncOfModule2.setOnClickListener(new View.OnClickListener() {
+        btnCallMethodSyncOfModule2.setOnClickListener(new View.OnClickListener()
+
+        {
             @Override
             public void onClick(View v) {
 
             }
         });
-        btnCallMethodAsyncOfModule2.setOnClickListener(new View.OnClickListener() {
+        btnCallMethodAsyncOfModule2.setOnClickListener(new View.OnClickListener()
+
+        {
             @Override
             public void onClick(View v) {
 
             }
         });
-        btnObservableOfModule2.setOnClickListener(new View.OnClickListener() {
+        btnObservableOfModule2.setOnClickListener(new View.OnClickListener()
+
+        {
             @Override
             public void onClick(View v) {
 
