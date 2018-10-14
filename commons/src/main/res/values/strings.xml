@@ -29,7 +29,7 @@
     <string name="fragment_from_module2">This Fragment is \nloaded from module2</string>
 
     <string name="activity_from_app">这个Activity来自app模块</string>
-    <string name="activity_from_module1">This Activity is loaded from module1</string>
+    <string name="activity_from_module1">这个Activity来自module1模块</string>
     <string name="activity_from_module2">This Activity is loaded from module2</string>
 
 
