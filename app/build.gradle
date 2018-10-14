@@ -31,4 +31,5 @@ dependencies {
     implementation 'io.github.prototypez:app-joint-core:1.1'
     implementation project(':commons')
     implementation project(":module1")
+    implementation project(":router")
 }

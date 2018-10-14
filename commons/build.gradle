@@ -38,4 +38,5 @@ dependencies {
 
     api 'com.android.support:appcompat-v7:26.1.0'
     api 'com.android.support:design:26.1.0'
+    api 'io.reactivex.rxjava2:rxjava:2.2.2'
 }

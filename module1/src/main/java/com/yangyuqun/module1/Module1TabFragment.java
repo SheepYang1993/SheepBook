@@ -8,6 +8,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.yangyuqun.commons.ToastUtil;
+import com.yangyuqun.router.app.callback.AppCallback;
+import com.yangyuqun.router.app.entity.AppEntity;
+
 /**
  * @author SheepYang
  * @Email 332594623@qq.com
@@ -62,25 +66,38 @@ public class Module1TabFragment extends Fragment {
         btnStartActivityOfApp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Services.sAppService.startActivityOfApp(getContext());
             }
         });
         btnGetFragmentOfApp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                getChildFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.vAppFragmentPlaceholder, Services.sAppService.obtainFragmentOfApp())
+                        .commitAllowingStateLoss();
             }
         });
         btnCallMethodSyncOfApp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                ToastUtil.show("来自App模块: " + Services.sAppService.callMethodSyncOfApp());
             }
         });
         btnCallMethodAsyncOfApp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Services.sAppService.callMethodAsyncOfApp(new AppCallback<AppEntity>() {
+                    @Override
+                    public void onResult(final AppEntity data) {
+                        btnCallMethodAsyncOfApp.post(new Runnable() {
+                            @Override
+                            public void run() {
+                                ToastUtil.show("来自App模块: " + data.data);
+                            }
+                        });
+                    }
+                });
             }
         });
         btnObservableOfApp.setOnClickListener(new View.OnClickListener() {

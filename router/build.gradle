@@ -35,8 +35,5 @@ dependencies {
     androidTestImplementation('com.android.support:support-annotations:26.1.0') {
         force = true
     }
-
-    implementation "io.github.prototypez:app-joint-core:1.1"
-    implementation project(':commons')
-    api project(":router")
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.2'
 }
