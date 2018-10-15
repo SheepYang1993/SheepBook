@@ -1,4 +1,4 @@
-package com.yangyuqun.modulestandalone1.mock;
+package com.yangyuqun.module1standalone.mock;
 
 import android.content.Context;
 import android.support.v4.app.Fragment;

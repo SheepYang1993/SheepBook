@@ -1,4 +1,4 @@
-package com.yangyuqun.modulestandalone1;
+package com.yangyuqun.module1standalone;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

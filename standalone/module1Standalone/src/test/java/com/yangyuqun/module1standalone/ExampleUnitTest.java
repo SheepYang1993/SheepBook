@@ -1,4 +1,4 @@
-package com.yangyuqun.modulestandalone1;
+package com.yangyuqun.module1standalone;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.yangyuqun.modulestandalone1;
+package com.yangyuqun.module1standalone;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
