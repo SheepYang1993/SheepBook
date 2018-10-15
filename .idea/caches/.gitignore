@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 /build_file_checksums.ser
+=======
+*.ser
+>>>>>>> release/1.0.0

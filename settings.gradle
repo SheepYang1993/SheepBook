@@ -1,1 +1,7 @@
-include ':app', ':module1', ':module2', ':commons'
+include ':app'
+include ':module1'
+include ':module2'
+include ':commons'
+include ':router'
+include ':standalone:module1Standalone'
+include ':standalone:module2Standalone'

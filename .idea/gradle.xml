@@ -12,6 +12,10 @@
             <option value="$PROJECT_DIR$/commons" />
             <option value="$PROJECT_DIR$/module1" />
             <option value="$PROJECT_DIR$/module2" />
+            <option value="$PROJECT_DIR$/router" />
+            <option value="$PROJECT_DIR$/standalone" />
+            <option value="$PROJECT_DIR$/standalone/module1Standalone" />
+            <option value="$PROJECT_DIR$/standalone/module2Standalone" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
