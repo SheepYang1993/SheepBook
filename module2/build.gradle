@@ -1,4 +1,4 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 26
@@ -6,7 +6,6 @@ android {
 
 
     defaultConfig {
-        applicationId "com.yangyuqun.module2"
         minSdkVersion 17
         targetSdkVersion 26
         versionCode 1
@@ -36,4 +35,8 @@ dependencies {
     androidTestImplementation('com.android.support:support-annotations:26.1.0') {
         force = true
     }
+
+    implementation "io.github.prototypez:app-joint-core:1.1"
+    implementation project(':commons')
+    api project(":router")
 }
