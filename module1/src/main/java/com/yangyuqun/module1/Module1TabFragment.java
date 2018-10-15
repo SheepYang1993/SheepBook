@@ -11,6 +11,8 @@ import android.widget.Button;
 import com.yangyuqun.commons.ToastUtil;
 import com.yangyuqun.router.app.callback.AppCallback;
 import com.yangyuqun.router.app.entity.AppEntity;
+import com.yangyuqun.router.module2.callback.Module2Callback;
+import com.yangyuqun.router.module2.entity.Module2Entity;
 
 import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;
@@ -77,7 +79,8 @@ public class Module1TabFragment extends Fragment {
             public void onClick(View v) {
                 getChildFragmentManager()
                         .beginTransaction()
-                        .replace(R.id.vAppFragmentPlaceholder, Services.sAppService.obtainFragmentOfApp())
+                        .replace(R.id.vAppFragmentPlaceholder,
+                                Services.sAppService.obtainFragmentOfApp())
                         .commitAllowingStateLoss();
             }
         });
@@ -131,44 +134,69 @@ public class Module1TabFragment extends Fragment {
                         });
             }
         });
-        btnStartActivityOfModule2.setOnClickListener(new View.OnClickListener()
-
-        {
+        btnStartActivityOfModule2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Services.sModule2Service.startActivityOfModule2(getContext());
             }
         });
-        btnGetFragmentOfModule2.setOnClickListener(new View.OnClickListener()
-
-        {
+        btnGetFragmentOfModule2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                getChildFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.vModule2FragmentPlaceholder,
+                                Services.sModule2Service.obtainFragmentOfModule2())
+                        .commitAllowingStateLoss();
             }
         });
-        btnCallMethodSyncOfModule2.setOnClickListener(new View.OnClickListener()
-
-        {
+        btnCallMethodSyncOfModule2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                ToastUtil.show("来自module2模块: " + Services.sModule2Service.callMethodSyncOfModule2());
             }
         });
-        btnCallMethodAsyncOfModule2.setOnClickListener(new View.OnClickListener()
-
-        {
+        btnCallMethodAsyncOfModule2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Services.sModule2Service.callMethodAsyncOfModule2(new Module2Callback<Module2Entity>() {
+                    @Override
+                    public void onResult(final Module2Entity data) {
+                        btnCallMethodAsyncOfModule2.post(new Runnable() {
+                            @Override
+                            public void run() {
+                                ToastUtil.show("来自module2模块: " + data.data);
+                            }
+                        });
+                    }
+                });
             }
         });
-        btnObservableOfModule2.setOnClickListener(new View.OnClickListener()
-
-        {
+        btnObservableOfModule2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Services.sModule2Service.observableOfModule2()
+                        .subscribe(new Observer<Module2Entity>() {
+                            @Override
+                            public void onSubscribe(Disposable d) {
 
+                            }
+
+                            @Override
+                            public void onNext(Module2Entity module2Entity) {
+                                ToastUtil.show("来自module2模块: " + module2Entity.data);
+                            }
+
+                            @Override
+                            public void onError(Throwable e) {
+
+                            }
+
+                            @Override
+                            public void onComplete() {
+
+                            }
+                        });
             }
         });
     }

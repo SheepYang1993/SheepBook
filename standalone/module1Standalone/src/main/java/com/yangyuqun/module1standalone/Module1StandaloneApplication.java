@@ -2,10 +2,10 @@ package com.yangyuqun.module1standalone;
 
 import android.util.Log;
 
-import io.github.prototypez.appjoint.module1.Module1Application;
-import io.github.prototypez.appjoint.module1.Services;
-import io.github.prototypez.appjoint.module1.standalone.mock.AppServiceMock;
-import io.github.prototypez.appjoint.module1.standalone.mock.Module2ServiceMock;
+import com.yangyuqun.module1.Module1Application;
+import com.yangyuqun.module1.Services;
+import com.yangyuqun.module1standalone.mock.AppServiceMock;
+
 
 public class Module1StandaloneApplication extends Module1Application {
 
@@ -18,6 +18,6 @@ public class Module1StandaloneApplication extends Module1Application {
 
         // Replace instances inside Services
         Services.sAppService = new AppServiceMock();
-        Services.sModule2Service = new Module2ServiceMock();
+//        Services.sModule2Service = new Module2ServiceMock();
     }
 }

@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/module1/module1.iml" filepath="$PROJECT_DIR$/module1/module1.iml" />
       <module fileurl="file://$PROJECT_DIR$/standalone/module1Standalone/module1Standalone.iml" filepath="$PROJECT_DIR$/standalone/module1Standalone/module1Standalone.iml" />
       <module fileurl="file://$PROJECT_DIR$/module2/module2.iml" filepath="$PROJECT_DIR$/module2/module2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/standalone/module2Standalone/module2Standalone.iml" filepath="$PROJECT_DIR$/standalone/module2Standalone/module2Standalone.iml" />
       <module fileurl="file://$PROJECT_DIR$/router/router.iml" filepath="$PROJECT_DIR$/router/router.iml" />
       <module fileurl="file://$PROJECT_DIR$/standalone/standalone.iml" filepath="$PROJECT_DIR$/standalone/standalone.iml" />
     </modules>
