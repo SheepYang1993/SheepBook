@@ -41,8 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 case 0:
                     return Module1TabFragment.newInstance();
                 case 1:
-                    //TODO 替换成Module2Fragment
-                    return Module1TabFragment.newInstance();
+                    return Services.sModule2Service.module2TabFragment();
                 default:
                     throw new IllegalArgumentException("Illegal adapter index " + position);
             }
