@@ -1,35 +1,37 @@
-package com.yangyuqun.module2;
+package com.yangyuqun.module1.standalone.mock;
 
 import android.content.Context;
 import android.support.v4.app.Fragment;
 
+import com.yangyuqun.commons.ToastUtil;
 import com.yangyuqun.router.module2.Module2Service;
 import com.yangyuqun.router.module2.callback.Module2Callback;
 import com.yangyuqun.router.module2.entity.Module2Entity;
 
-import io.github.prototypez.appjoint.core.ServiceProvider;
 import io.reactivex.Observable;
 
 /**
  * @author SheepYang
  * @Email 332594623@qq.com
- * @since 2018/10/15 11:27
+ * @date 2018/10/14
  */
-@ServiceProvider
-public class Module2ServiceImpl implements Module2Service {
+
+public class Module2ServiceMock implements Module2Service {
+
     @Override
     public void startActivityOfModule2(Context context) {
-        Module2Activity.start(context);
+        ToastUtil.show("模拟<结果：调用打开模块2Activity>");
     }
 
     @Override
     public Fragment obtainFragmentOfModule2() {
-        return Module2Fragment.newInstance();
+        ToastUtil.show("模拟<结果：调用获取模块2Fragment>");
+        return new Fragment();
     }
 
     @Override
     public String callMethodSyncOfModule2() {
-        return "结果：调用模块2同步方法";
+        return "模拟<结果：调用模块2同步方法>";
     }
 
     @Override
@@ -38,18 +40,18 @@ public class Module2ServiceImpl implements Module2Service {
             @Override
             public void run() {
                 super.run();
-                callback.onResult(new Module2Entity("结果：调用模块2异步方法"));
+                callback.onResult(new Module2Entity("模拟<结果：调用模块2异步方法>"));
             }
         }.start();
     }
 
     @Override
     public Observable<Module2Entity> observableOfModule2() {
-        return Observable.just(new Module2Entity("结果：调用模块2Rx方法"));
+        return Observable.just(new Module2Entity("模拟<结果：调用模块2Rx方法>"));
     }
 
     @Override
     public Fragment module2TabFragment() {
-        return Module2TabFragment.newInstance();
+        return null;
     }
 }

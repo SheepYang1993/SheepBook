@@ -22,12 +22,12 @@ public class AppServiceImpl implements AppService {
 
     @Override
     public String callMethodSyncOfApp() {
-        return "syncMethodResultApp";
+        return "结果：调用App模块同步方法";
     }
 
     @Override
     public Observable<AppEntity> observableOfApp() {
-        return Observable.just(new AppEntity("rxJavaResultApp"));
+        return Observable.just(new AppEntity("结果：调用App模块Rx方法"));
     }
 
     @Override
@@ -36,7 +36,7 @@ public class AppServiceImpl implements AppService {
             @Override
             public void run() {
                 super.run();
-                callback.onResult(new AppEntity("asyncMethodResultApp"));
+                callback.onResult(new AppEntity("结果：调用App模块异步方法"));
             }
         }.start();
     }

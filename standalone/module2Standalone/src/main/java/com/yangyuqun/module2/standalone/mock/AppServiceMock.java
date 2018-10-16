@@ -1,4 +1,4 @@
-package com.yangyuqun.module1standalone.mock;
+package com.yangyuqun.module2.standalone.mock;
 
 import android.content.Context;
 import android.support.v4.app.Fragment;
@@ -20,12 +20,12 @@ public class AppServiceMock implements AppService {
 
     @Override
     public String callMethodSyncOfApp() {
-        return "Mock<syncMethodResultApp>";
+        return "模拟<结果：调用App模块同步方法>";
     }
 
     @Override
     public Observable<AppEntity> observableOfApp() {
-        return Observable.just(new AppEntity("Mock<rxJavaResultApp>"));
+        return Observable.just(new AppEntity("模拟<结果：调用App模块Rx方法>"));
     }
 
     @Override
@@ -34,7 +34,7 @@ public class AppServiceMock implements AppService {
             @Override
             public void run() {
                 super.run();
-                callback.onResult(new AppEntity("Mock<asyncMethodResultApp>"));
+                callback.onResult(new AppEntity("模拟<结果：调用App模块异步方法>"));
             }
         }.start();
 
@@ -42,12 +42,12 @@ public class AppServiceMock implements AppService {
 
     @Override
     public void startActivityOfApp(Context context) {
-        ToastUtil.show("Mock: startActivityOfApp called");
+        ToastUtil.show("模拟<结果：调用打开App模块Activity>");
     }
 
     @Override
     public Fragment obtainFragmentOfApp() {
-        ToastUtil.show("Mock: obtainFragmentOfApp called");
+        ToastUtil.show("模拟<结果：调用获取App模块Fragment>");
         return new Fragment();
     }
 }
