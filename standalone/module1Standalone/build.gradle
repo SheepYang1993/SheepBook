@@ -6,7 +6,7 @@ android {
 
 
     defaultConfig {
-        applicationId "com.yangyuqun.module3.standalone"
+        applicationId "com.yangyuqun.module1.standalone"
         minSdkVersion 17
         targetSdkVersion 26
         versionCode 1

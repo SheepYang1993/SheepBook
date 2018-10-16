@@ -1,11 +1,11 @@
-package com.yangyuqun.module3.standalone;
+package com.yangyuqun.module1.standalone;
 
 import android.util.Log;
 
 import com.yangyuqun.module1.Module1Application;
 import com.yangyuqun.module1.Services;
-import com.yangyuqun.module2.standalone.mock.AppServiceMock;
-import com.yangyuqun.module2.standalone.mock.Module2ServiceMock;
+import com.yangyuqun.module1.standalone.mock.AppServiceMock;
+import com.yangyuqun.module1.standalone.mock.Module2ServiceMock;
 
 
 public class Module1StandaloneApplication extends Module1Application {

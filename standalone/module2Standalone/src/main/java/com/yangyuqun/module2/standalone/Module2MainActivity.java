@@ -3,8 +3,6 @@ package com.yangyuqun.module2.standalone;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import com.yangyuqun.module1.Module1TabFragment;
-import com.yangyuqun.module3.standalone.R;
 import com.yangyuqun.module2.Module2TabFragment;
 
 public class Module2MainActivity extends AppCompatActivity {

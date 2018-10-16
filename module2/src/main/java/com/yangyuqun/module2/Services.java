@@ -10,7 +10,7 @@ import io.github.prototypez.appjoint.AppJoint;
  * @Email 332594623@qq.com
  * @since 2018/10/15 17:50
  */
-public interface Services {
+public class Services {
 
     public static AppService sAppService = AppJoint.service(AppService.class);
 

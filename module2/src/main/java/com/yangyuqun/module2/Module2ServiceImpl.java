@@ -29,7 +29,7 @@ public class Module2ServiceImpl implements Module2Service {
 
     @Override
     public String callMethodSyncOfModule2() {
-        return "syncMethodResultModule2";
+        return "结果：调用模块2同步方法";
     }
 
     @Override
@@ -38,14 +38,14 @@ public class Module2ServiceImpl implements Module2Service {
             @Override
             public void run() {
                 super.run();
-                callback.onResult(new Module2Entity("asyncMethodResultModule2"));
+                callback.onResult(new Module2Entity("结果：调用模块2异步方法"));
             }
         }.start();
     }
 
     @Override
     public Observable<Module2Entity> observableOfModule2() {
-        return Observable.just(new Module2Entity("rxJavaResultModule2"));
+        return Observable.just(new Module2Entity("结果：调用模块2Rx方法"));
     }
 
     @Override

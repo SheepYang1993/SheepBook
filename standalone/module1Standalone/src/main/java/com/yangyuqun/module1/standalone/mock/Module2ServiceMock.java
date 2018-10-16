@@ -1,4 +1,4 @@
-package com.yangyuqun.module2.standalone.mock;
+package com.yangyuqun.module1.standalone.mock;
 
 import android.content.Context;
 import android.support.v4.app.Fragment;
@@ -20,18 +20,18 @@ public class Module2ServiceMock implements Module2Service {
 
     @Override
     public void startActivityOfModule2(Context context) {
-        ToastUtil.show("Mock: startActivityOfModule2 called");
+        ToastUtil.show("模拟<结果：调用打开模块2Activity>");
     }
 
     @Override
     public Fragment obtainFragmentOfModule2() {
-        ToastUtil.show("Mock: obtainFragmentOfModule2 called");
+        ToastUtil.show("模拟<结果：调用获取模块2Fragment>");
         return new Fragment();
     }
 
     @Override
     public String callMethodSyncOfModule2() {
-        return "Mock<syncMethodResultModule2>";
+        return "模拟<结果：调用模块2同步方法>";
     }
 
     @Override
@@ -40,14 +40,14 @@ public class Module2ServiceMock implements Module2Service {
             @Override
             public void run() {
                 super.run();
-                callback.onResult(new Module2Entity("Mock<asyncMethodResultModule2>"));
+                callback.onResult(new Module2Entity("模拟<结果：调用模块2异步方法>"));
             }
         }.start();
     }
 
     @Override
     public Observable<Module2Entity> observableOfModule2() {
-        return Observable.just(new Module2Entity("Mock<rxJavaResultModule2>"));
+        return Observable.just(new Module2Entity("模拟<结果：调用模块2Rx方法>"));
     }
 
     @Override
