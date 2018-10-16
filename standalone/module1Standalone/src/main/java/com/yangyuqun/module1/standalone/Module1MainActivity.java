@@ -1,10 +1,9 @@
 package com.yangyuqun.module1.standalone;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 import com.yangyuqun.module1.Module1TabFragment;
-import com.yangyuqun.module3.standalone.R;
 
 public class Module1MainActivity extends AppCompatActivity {
 

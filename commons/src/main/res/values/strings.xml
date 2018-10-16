@@ -1,9 +1,21 @@
 <resources>
     <string name="app_name">commons</string>
 
-    <string name="startActivityOfApp">打开App模块的Activity</string>
-    <string name="startActivityOfModule1">打开模块1的Activity</string>
-    <string name="startActivityOfModule2">打开模块2的Activity</string>
+    <string name="activity_from_app">这个Activity来自App模块</string>
+    <string name="activity_from_module1">这个Activity来自模块1</string>
+    <string name="activity_from_module2">这个Activity来自模块2</string>
+
+    <string name="fragment_from_app">这个Fragment来自App模块</string>
+    <string name="fragment_from_module1">这个Fragment来自模块1</string>
+    <string name="fragment_from_module2">这个Fragment来自模块2</string>
+
+    <string name="startActivityOfApp">打开App模块Activity</string>
+    <string name="startActivityOfModule1">打开模块1Activity</string>
+    <string name="startActivityOfModule2">打开模块2Activity</string>
+
+    <string name="getFragmentOfApp">获取App模块Fragment</string>
+    <string name="getFragmentOfModule1">获取模块1Fragment</string>
+    <string name="getFragmentOfModule2">获取模块2Fragment</string>
 
     <string name="callMethodSyncOfApp">调用App模块的同步方法</string>
     <string name="callMethodSyncOfModule1">调用模块1的同步方法</string>
@@ -17,20 +29,7 @@
     <string name="observableOfModule1">调用模块1的Rx方法</string>
     <string name="observableOfModule2">调用模块2的Rx方法</string>
 
-    <string name="getFragmentOfApp">获取App模块的Fragment</string>
-    <string name="getFragmentOfModule1">获取模块1的Fragment</string>
-    <string name="getFragmentOfModule2">获取模块2的Fragment</string>
-
     <string name="module1">模块1</string>
     <string name="module2">模块2</string>
-
-    <string name="fragment_from_app">这个Fragment来自App模块</string>
-    <string name="fragment_from_module1">这个Fragment来自模块1</string>
-    <string name="fragment_from_module2">这个Fragment来自模块2</string>
-
-    <string name="activity_from_app">这个Activity来自App模块</string>
-    <string name="activity_from_module1">这个Activity来自模块1</string>
-    <string name="activity_from_module2">这个Activity来自模块2</string>
-
 
 </resources>

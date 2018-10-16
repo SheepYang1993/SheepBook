@@ -119,7 +119,7 @@ public class Module2TabFragment extends Fragment {
 
                             @Override
                             public void onNext(AppEntity appEntity) {
-                                ToastUtil.show("来自app模块: " + appEntity.data);
+                                ToastUtil.show("来自App模块: " + appEntity.data);
                             }
 
                             @Override
