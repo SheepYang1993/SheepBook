@@ -1,10 +1,10 @@
-//��ģ��
+//主模块
 include ':app'
-//����ģ��
+//独立模块
 include ':module1'
 include ':module2'
+//单模块启动(可运行)
 include ':commons'
 include ':router'
-//��ģ������(������)
 include ':standalone:module1Standalone'
 include ':standalone:module2Standalone'
