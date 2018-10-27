@@ -3,8 +3,10 @@ include ':app'
 //独立模块
 include ':module1'
 include ':module2'
-//单模块启动(可运行)
+//通用模块
 include ':commons'
+//路由模块
 include ':router'
+//独立运行模块
 include ':standalone:module1Standalone'
 include ':standalone:module2Standalone'
