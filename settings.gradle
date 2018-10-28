@@ -5,6 +5,8 @@ include ':module1'
 include ':module2'
 //通用模块
 include ':commons'
+//通用组件
+include ':CommonWidget'
 //路由模块
 include ':router'
 //独立运行模块
