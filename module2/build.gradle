@@ -23,7 +23,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation project(':commons')
+    implementation project(':Commons')
     //以api形式暴露出去，让standalone能使用router
-    api project(":router")
+    api project(':Router')
 }

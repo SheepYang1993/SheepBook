@@ -29,8 +29,8 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation project(':commons')
-    implementation project(":router")
-    implementation project(":module1")
-    implementation project(":module2")
+    implementation project(':Commons')
+    implementation project(':Router')
+    implementation project(':Module1')
+    implementation project(':Module2')
 }

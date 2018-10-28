@@ -1,16 +1,16 @@
 //主模块
 include ':app'
 //独立模块
-include ':module1'
-include ':module2'
+include ':Module1'
+include ':Module2'
 //通用模块
-include ':commons'
+include ':Commons'
 //通用组件
 include ':CommonWidget'
 //路由模块
-include ':router'
+include ':Router'
 //独立运行模块
-include ':standalone:module1Standalone'
-include ':standalone:module2Standalone'
+include ':Standalone:Module1Standalone'
+include ':Standalone:Module2Standalone'
 //模板模块
 include ':ModuleTemplate'

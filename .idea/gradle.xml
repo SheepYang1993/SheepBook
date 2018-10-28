@@ -9,15 +9,15 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/CommonWidget" />
+            <option value="$PROJECT_DIR$/Commons" />
+            <option value="$PROJECT_DIR$/Module1" />
+            <option value="$PROJECT_DIR$/Module2" />
             <option value="$PROJECT_DIR$/ModuleTemplate" />
+            <option value="$PROJECT_DIR$/Router" />
+            <option value="$PROJECT_DIR$/Standalone" />
+            <option value="$PROJECT_DIR$/Standalone/Module1Standalone" />
+            <option value="$PROJECT_DIR$/Standalone/Module2Standalone" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/commons" />
-            <option value="$PROJECT_DIR$/module1" />
-            <option value="$PROJECT_DIR$/module2" />
-            <option value="$PROJECT_DIR$/router" />
-            <option value="$PROJECT_DIR$/standalone" />
-            <option value="$PROJECT_DIR$/standalone/module1Standalone" />
-            <option value="$PROJECT_DIR$/standalone/module2Standalone" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
