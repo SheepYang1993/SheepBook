@@ -10,3 +10,5 @@ include ':router'
 //独立运行模块
 include ':standalone:module1Standalone'
 include ':standalone:module2Standalone'
+//模板模块
+include ':ModuleTemplate'
