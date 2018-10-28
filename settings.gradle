@@ -1,5 +1,5 @@
 //主模块
-include ':app'
+include ':app', ':SheepKit'
 //独立模块
 include ':Module1'
 include ':Module2'

@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/ModuleTemplate/ModuleTemplate.iml" filepath="$PROJECT_DIR$/ModuleTemplate/ModuleTemplate.iml" />
       <module fileurl="file://$PROJECT_DIR$/Router/router.iml" filepath="$PROJECT_DIR$/Router/router.iml" />
       <module fileurl="file://$PROJECT_DIR$/SheepBook.iml" filepath="$PROJECT_DIR$/SheepBook.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SheepKit/SheepKit.iml" filepath="$PROJECT_DIR$/SheepKit/SheepKit.iml" />
       <module fileurl="file://$PROJECT_DIR$/Standalone/standalone.iml" filepath="$PROJECT_DIR$/Standalone/standalone.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
