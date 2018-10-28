@@ -2,7 +2,8 @@ apply plugin: 'com.android.application'
 apply plugin: 'app-joint'
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
 
     compileOptions {
         sourceCompatibility 1.8
@@ -10,12 +11,13 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.yangyuqun.sheepbook"
-        minSdkVersion 17
-        targetSdkVersion 26
-        versionCode 1
-        versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        applicationId rootProject.ext.applicationId.app
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+
+        testInstrumentationRunner rootProject.ext.dependentsTest["AndroidJUnitRunner"]
     }
     buildTypes {
         release {
