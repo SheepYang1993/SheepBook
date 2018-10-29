@@ -1,0 +1,40 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+
+        testInstrumentationRunner rootProject.ext.dependentsTest["AndroidJUnitRunner"]
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    testImplementation rootProject.ext.dependentsTest["junit"]
+    androidTestImplementation rootProject.ext.dependentsTest["runner"]
+    androidTestImplementation rootProject.ext.dependentsTest["espresso-core"]
+    androidTestImplementation(rootProject.ext.dependentsTest["support-annotations"]) {
+        force = true
+    }
+
+    api rootProject.ext.dependentsNormal["appcompat-v7"]
+    api rootProject.ext.dependentsNormal["design"]
+    api rootProject.ext.dependentsNormal["rxjava2"]
+    //AppJoint组件化方案，以api形式暴露出去，引用commons的库均可使用此框架
+    api rootProject.ext.dependentsNormal["appjoint-core"]
+    api rootProject.ext.dependentsNormal["constraint-layout"]
+}

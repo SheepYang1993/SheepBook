@@ -1,17 +1,10 @@
-apply plugin: 'com.android.application'
-apply plugin: 'app-joint'
+apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion rootProject.ext.android.compileSdkVersion
     buildToolsVersion rootProject.ext.android.buildToolsVersion
 
-    compileOptions {
-        sourceCompatibility 1.8
-        targetCompatibility 1.8
-    }
-
     defaultConfig {
-        applicationId rootProject.ext.applicationId.app
         minSdkVersion rootProject.ext.android.minSdkVersion
         targetSdkVersion rootProject.ext.android.targetSdkVersion
         versionCode rootProject.ext.android.versionCode
@@ -19,18 +12,19 @@ android {
 
         testInstrumentationRunner rootProject.ext.dependentsTest["AndroidJUnitRunner"]
     }
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
 }
 
 dependencies {
-    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(':Commons')
-    implementation project(':Router')
-    implementation project(':Module1')
-    implementation project(':Module2')
+    //以api形式暴露出去，让standalone能使用router
+    api project(':Router')
 }
