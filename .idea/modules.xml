@@ -3,20 +3,17 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CommonWidget/CommonWidget.iml" filepath="$PROJECT_DIR$/CommonWidget/CommonWidget.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Commons/commons.iml" filepath="$PROJECT_DIR$/Commons/commons.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Module1/module1.iml" filepath="$PROJECT_DIR$/Module1/module1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Standalone/Module1Standalone/module1Standalone.iml" filepath="$PROJECT_DIR$/Standalone/Module1Standalone/module1Standalone.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Module2/module2.iml" filepath="$PROJECT_DIR$/Module2/module2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Standalone/Module2Standalone/module2Standalone.iml" filepath="$PROJECT_DIR$/Standalone/Module2Standalone/module2Standalone.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Commons/Commons.iml" filepath="$PROJECT_DIR$/Commons/Commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module1/Module1.iml" filepath="$PROJECT_DIR$/Module1/Module1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Standalone/Module1Standalone/Module1Standalone.iml" filepath="$PROJECT_DIR$/Standalone/Module1Standalone/Module1Standalone.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module2/Module2.iml" filepath="$PROJECT_DIR$/Module2/Module2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Standalone/Module2Standalone/Module2Standalone.iml" filepath="$PROJECT_DIR$/Standalone/Module2Standalone/Module2Standalone.iml" />
       <module fileurl="file://$PROJECT_DIR$/ModuleTemplate/ModuleTemplate.iml" filepath="$PROJECT_DIR$/ModuleTemplate/ModuleTemplate.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ModuleTemplate/ModuleTemplate.iml" filepath="$PROJECT_DIR$/ModuleTemplate/ModuleTemplate.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Router/router.iml" filepath="$PROJECT_DIR$/Router/router.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Router/Router.iml" filepath="$PROJECT_DIR$/Router/Router.iml" />
       <module fileurl="file://$PROJECT_DIR$/SheepBook.iml" filepath="$PROJECT_DIR$/SheepBook.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SheepKit/SheepKit.iml" filepath="$PROJECT_DIR$/SheepKit/SheepKit.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SheepKit/SheepKit.iml" filepath="$PROJECT_DIR$/SheepKit/SheepKit.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Standalone/standalone.iml" filepath="$PROJECT_DIR$/Standalone/standalone.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Submodule/SheepKit/SheepKit.iml" filepath="$PROJECT_DIR$/Submodule/SheepKit/SheepKit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Standalone/Standalone.iml" filepath="$PROJECT_DIR$/Standalone/Standalone.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/CommonWidget/commonwidget.iml" filepath="$PROJECT_DIR$/CommonWidget/commonwidget.iml" />
     </modules>
   </component>
 </project>

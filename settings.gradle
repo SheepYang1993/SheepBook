@@ -1,5 +1,5 @@
 //主模块
-include ':app', ':SheepKit'
+include ':app'
 //独立模块
 include ':Module1'
 include ':Module2'
@@ -14,3 +14,6 @@ include ':Standalone:Module1Standalone'
 include ':Standalone:Module2Standalone'
 //模板模块
 include ':ModuleTemplate'
+include ':SheepKit'
+
+project(':SheepKit').projectDir = new File('Submodule/SheepKit')

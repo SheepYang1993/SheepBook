@@ -33,4 +33,5 @@ dependencies {
     implementation project(':Router')
     implementation project(':Module1')
     implementation project(':Module2')
+    implementation project(':SheepKit')
 }
